@@ -1,50 +1,50 @@
-# 📈 Stock Price Prediction using Linear Regression  
+# 📈 Netflix Stock Price Prediction
 
-## 🔍 Overview  
-This project aims to predict **Netflix (NFLX) stock prices** using a **Linear Regression model**.  
-We use historical stock data, including **Open, High, Low, Close, Adjusted Close, and Volume**, to forecast future prices.  
+This project predicts **Netflix's stock closing price** using **Lasso Regression**. The web app is built with **Streamlit**, allowing users to input stock details and get real-time predictions.
 
 ---
 
-## 📂 Dataset  
-- **Data Source:** Historical stock data for Netflix (NFLX)  
-- **Columns:** `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume`  
-- **Target Variable:** `Close` (Stock Closing Price)  
+## 🚀 Features
+- **Machine Learning Model**: Lasso Regression for stock price prediction.
+- **Streamlit Web App**: Interactive UI to input stock details and get predictions.
+- **Data Visualization**: Displays sample Netflix stock data.
 
 ---
 
-## ⚙️ Features Used  
-✅ **Open** — Opening price of the stock  
-✅ **High** — Highest price during the day  
-✅ **Low** — Lowest price during the day  
-✅ **Adj Close** — Adjusted closing price (accounts for stock splits & dividends)  
-✅ **Volume** — Number of shares traded  
+## 📂 Project Structure
+📁 Netflix-Stock-Prediction │-- 📄 main.ipynb # Jupyter Notebook for training the model │-- 📄 app.py # Streamlit app for predictions │-- 📄 lasso_model.pkl # Trained Lasso model │-- 📄 Netflix_Stock_Price.csv # Dataset │-- 📄 README.md # Project Documentation │-- 📄 requirements.txt # Dependencies
+
 
 ---
 
-## 📌 Model Used  
-- ✅ **Linear Regression**  
-Simple linear regression to predict closing prices based on provided features.  
+## ⚙️ Installation
 
----
-
-## 📊 Model Evaluation  
-Evaluation metrics to assess model performance:  
-✔ **R² Score (Coefficient of Determination)**  
-✔ **Mean Squared Error (MSE)**  
-
----
-
-## 🏗 Installation & Setup  
-### 🔹 Clone the Repository  
-```bash
-git clone https://github.com/yourusername/stock-price-prediction.git
-cd stock-price-prediction
+1️⃣ **Clone the Repository**
+```sh
+git clone https://github.com/your-username/Netflix-Stock-Prediction.git
+cd Netflix-Stock-Prediction
 ```
-🔹 Install Dependencies
-```bash
+2️⃣ Create a Virtual Environment (Optional but recommended)
+```sh
+python -m venv env
+source env/bin/activate   # Mac/Linux
+env\Scripts\activate      # Windows
+```
+3️⃣ Install Dependencies
+```sh
 pip install -r requirements.txt
 ```
-🔹 Run the Streamlit App
-```bash
+4️⃣ Run the Streamlit App
+```sh
 streamlit run app.py
+
+
+
+
+
+
+
+
+
+
+
